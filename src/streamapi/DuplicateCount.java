@@ -15,12 +15,12 @@ public class DuplicateCount {
 
        String s ="basant";
 
-      Map<String ,Long> map = stream(s.split(""))
-           .collect(
+        Map<String ,Long> map = stream(s.split(""))
+                .collect(
 
-             groupingBy(
-                    Function.identity(), counting())
-           );
+                        groupingBy(
+                                Function.identity(), counting())
+                );
 
 
         System.out.println(map);
