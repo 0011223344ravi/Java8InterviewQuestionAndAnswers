@@ -1,4 +1,4 @@
-package groupby;
+package Java8Revision;
 
 public class Employee {
 
@@ -44,6 +44,4 @@ public class Employee {
                 ", dept='" + dept + '\'' +
                 '}';
     }
-
-
 }
