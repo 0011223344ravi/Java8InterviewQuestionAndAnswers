@@ -19,6 +19,10 @@ public class GetHighestPaidEmployeeFromEachDept {
         Map<String, Employee> map =employeeList.stream().collect(Collectors.groupingBy(Employee::getDept,
                 Collectors.collectingAndThen(Collectors.maxBy(Comparator.comparingDouble(Employee::getSalary)), Optional::get))) ;
 
+        Map<String, Employee> map1 = employeeList.stream().collect(Collectors.groupingBy(Employee::getDept,
+                Collectors.collectingAndThen(Collectors.maxBy(Comparator.comparingDouble(Employee::getSalary)),Optional::get)));
         System.out.println(map);
+
+        System.out.println(map1);
     }
 }

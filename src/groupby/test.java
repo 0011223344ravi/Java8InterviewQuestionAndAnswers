@@ -20,7 +20,11 @@ public class test {
 
         Map<Object, List<Employee>> hm =
                 empList.stream().collect( groupingBy(t->t.dept));
-
         System.out.println(hm);
+
+        empList.stream().collect(Collectors.toSet()).forEach(System.out::println);
+
+        Map<Object, List<Employee>> hm1 =    empList.stream().collect(groupingBy(t->t.getDept()));
+        System.out.println(hm1);
     }
 }

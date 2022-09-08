@@ -17,5 +17,11 @@ public class DuplicateCount {
         String str = "Hello Ravi bhai how are you Ravi bhai";
         Map<String, Long> hm  =  Arrays.stream(str.split(" ")).collect(groupingBy(Function.identity(),counting()));
         System.out.println(hm);
+
+        Map<String, Long> hm1   =Arrays.stream(str.split(" ")).collect(groupingBy(Function.identity(),counting()));
+
+        System.out.println(hm1);
+
+
     }
 }

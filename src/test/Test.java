@@ -2,6 +2,7 @@ package test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.function.Function;
 
 public class Test
@@ -20,7 +21,7 @@ public class Test
 
        // System.out.println((str1==str2));
       //  System.out.println(n);
-        /*int arr [] ={ 10,1, 20, 0, 59, 63, 0, 88, 0 };
+       int arr [] ={ 10,1, 20, 0, 59, 63, 0, 88, 0 };
         ArrayList<Integer> al = new ArrayList<>();
         al.add(10);
         al.add(1);
@@ -32,7 +33,9 @@ public class Test
         al.add(88);
         al.add(0);
 
-        System.out.println(al);*/
+        System.out.println(al);
+      //  Arrays.asList(arr).stream().filter(t-> t%2==0).forEach(System.out::println);
+
 
     }
 

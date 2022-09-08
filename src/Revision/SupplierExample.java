@@ -8,5 +8,8 @@ public class SupplierExample {
         Supplier<String> supplier = ()-> "Ravi";
         System.out.println( supplier.get());
 
+        Supplier <Integer> supplier1 =()->1;
+        System.out.println(supplier1.get());
+
     }
 }
