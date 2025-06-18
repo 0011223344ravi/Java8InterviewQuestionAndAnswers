@@ -11,5 +11,7 @@ public class SupplierExample {
         Supplier <Integer> supplier1 =()->1;
         System.out.println(supplier1.get());
 
+         Supplier<String >  s2 =   ()->new String("nnjnj");
+        System.out.println(s2.get());
     }
 }

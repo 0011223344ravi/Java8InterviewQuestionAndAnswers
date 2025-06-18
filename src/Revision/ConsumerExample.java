@@ -10,5 +10,8 @@ public class ConsumerExample {
 
         Consumer<Integer>  consumer1  =t-> System.out.println(t);
         consumer1.accept(30);
+
+         Consumer<String>  consumer2    =  t-> System.out.println(t);
+         consumer2.accept("nbsn dsb");
     }
 }

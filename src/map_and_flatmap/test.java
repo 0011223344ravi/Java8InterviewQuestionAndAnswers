@@ -21,10 +21,13 @@ public class test {
         //when to use flatmap -> in the case of list of data its recommended to use the flatmap as a stream of data .
 
 
-      System.out.println(listOfName);
+     // System.out.println(listOfName);
 
-       System.out.println(listOfEmails);
+       //System.out.println(listOfEmails);
 
-         userList.stream().flatMap(t->t.emails.stream()).collect(Collectors.toList()).forEach(System.out::println);
+        // userList.stream().flatMap(t->t.emails.stream()).collect(Collectors.toList()).forEach(System.out::println);
+
+        List<String> listOfEmails1  = userList.stream().flatMap(t->t.emails.stream()).collect(Collectors.toList());
+        System.out.println(listOfEmails1);
     }
 }
